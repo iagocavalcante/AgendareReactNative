@@ -1,18 +1,16 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 
-class componentName extends Component {
+class CustomHeader extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-    };
   }
 
   
   renderLogo() {
     const logoApp = require('./../../assets/images/logo-app.png');
     return (
-      <View>
+      <View style={styles.headerBackground}>
         <Image
           source={logoApp}
         />
@@ -22,7 +20,7 @@ class componentName extends Component {
 
   renderText() {
     return (
-      <View>
+      <View style={styles.headerBackground}>
         <Text>{this.props.title}</Text>
       </View>
     )
@@ -43,4 +41,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default componentName;
+export default CustomHeader;
