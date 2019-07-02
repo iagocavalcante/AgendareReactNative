@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, StyleSheet, Image, ImageBackground, Text, TouchableOpacity } from 'react-native';
+import { View, StyleSheet, Image, ImageBackground, Text, TouchableOpacity, ScrollView } from 'react-native';
 import { Container, Content, Icon, Header, Body } from 'native-base'
 
 class Drawer extends Component {
@@ -12,6 +12,16 @@ class Drawer extends Component {
   render() {
     const backgroundDrawer = require('./../assets/images/background-drawer.png');
     const profilePic = require('./../assets/images/profile-pic.png');
+    const iconFaceActive = require('./../assets/images/baseline-face-24px.png');
+    const openBook = require('./../assets/images/open-book.png');
+    const loupe = require('./../assets/images/loupe.png');
+    const statistics = require('./../assets/images/statistics.png');
+    const test = require('./../assets/images/test.png');
+    const university = require('./../assets/images/university.png');
+    const chat = require('./../assets/images/chat.png');
+    const calendar = require('./../assets/images/calendar.png');
+    const alarmClock = require('./../assets/images/alarm-clock.png');
+    const iconFace = require('./../assets/images/icon-face-24.png');
 
     return (
       <Container>
@@ -32,7 +42,7 @@ class Drawer extends Component {
             
           </Body>
         </ImageBackground>
-        <Content>
+        <Content style={{flex: 1, flexDirection: 'column'}}>
           <View style={styles.containerStudent}>
             <Text style={{
               alignItems: 'center',
@@ -64,6 +74,374 @@ class Drawer extends Component {
               </Text>
             </TouchableOpacity>
           </View>
+          <View style={styles.containerStudentBar}>
+            <View style={{
+              marginTop: 10,
+              borderTopRightRadius: 50,
+              borderBottomRightRadius: 50,
+              backgroundColor: "rgb(3, 73, 107)",
+              width: 13,
+              height: 20
+            }}>
+            </View>
+            <Text style={{
+              alignItems: 'center',
+              marginLeft: 5,
+              marginTop: 8,
+              marginRight: 5,
+              fontSize: 22,
+              fontWeight: "normal",
+              fontStyle: "normal",
+              textAlign: "center",
+              color: "rgb(3, 73, 107)",
+            }}>
+              Alunos
+            </Text>
+            <View style={{
+              marginTop: 10,
+              borderTopLeftRadius: 50,
+              borderBottomLeftRadius: 50,
+              backgroundColor: "rgb(3, 73, 107)",
+              width: 245,
+              height: 20
+            }}>
+            </View>
+          </View>
+          <View style={styles.alunos}>
+            <Image
+              style={{marginRight: 5}}
+              source={iconFaceActive}
+            />
+            <TouchableOpacity style={{
+              alignItems: 'flex-start',
+              justifyContent: 'center',
+              borderRadius: 15,
+              width: 225,
+              backgroundColor: "rgb(169, 35, 0)"
+            }}>
+              <Text style={{
+                paddingLeft: 10,
+                fontSize: 16,
+                fontWeight: "300",
+                fontStyle: "normal",
+                color: "#ffffff"
+              }}>
+                Iago Angelim Cavalcante
+              </Text>
+            </TouchableOpacity>
+          </View>
+          <View style={styles.alunos}>
+            <Image
+              style={{marginRight: 5}}
+              source={iconFace}
+            />
+            <TouchableOpacity style={{
+              alignItems: 'flex-start',
+              justifyContent: 'center',
+              borderRadius: 15,
+              width: 225,
+              backgroundColor: "rgb(251, 52, 0)"
+            }}>
+              <Text style={{
+                paddingLeft: 10,
+                fontSize: 16,
+                fontWeight: "300",
+                fontStyle: "normal",
+                color: "#ffffff"
+              }}>
+                Victor Martins Lesk
+              </Text>
+            </TouchableOpacity>
+          </View>
+          <View style={styles.alunos}>
+            <Image
+              style={{marginRight: 5}}
+              source={iconFace}
+            />
+            <TouchableOpacity style={{
+              alignItems: 'flex-start',
+              justifyContent: 'center',
+              borderRadius: 15,
+              width: 225,
+              backgroundColor: "rgb(251, 52, 0)"
+            }}>
+              <Text style={{
+                paddingLeft: 10,
+                fontSize: 16,
+                fontWeight: "300",
+                fontStyle: "normal",
+                color: "#ffffff"
+              }}>
+                Francisco José Jonathan
+              </Text>
+            </TouchableOpacity>
+          </View>
+          <View style={styles.alunos}>
+            <Image
+              style={{marginRight: 5}}
+              source={iconFace}
+            />
+            <TouchableOpacity style={{
+              alignItems: 'flex-start',
+              justifyContent: 'center',
+              borderRadius: 15,
+              width: 225,
+              backgroundColor: "rgb(251, 52, 0)"
+            }}>
+              <Text style={{
+                paddingLeft: 10,
+                fontSize: 16,
+                fontWeight: "300",
+                fontStyle: "normal",
+                color: "#ffffff"
+              }}>
+                Frachesco Robervaldo
+              </Text>
+            </TouchableOpacity>
+          </View>
+          <View style={styles.containerMenuBar}>
+            <View style={{
+              marginTop: 10,
+              borderTopRightRadius: 50,
+              borderBottomRightRadius: 50,
+              backgroundColor: "rgb(3, 73, 107)",
+              width: 13,
+              height: 20
+            }}>
+            </View>
+            <Text style={{
+              alignItems: 'center',
+              marginLeft: 5,
+              marginTop: 8,
+              marginRight: 5,
+              fontSize: 22,
+              fontWeight: "normal",
+              fontStyle: "normal",
+              textAlign: "center",
+              color: "rgb(3, 73, 107)",
+            }}>
+              Menu
+            </Text>
+            <View style={{
+              marginTop: 10,
+              borderTopLeftRadius: 50,
+              borderBottomLeftRadius: 50,
+              backgroundColor: "rgb(3, 73, 107)",
+              width: 245,
+              height: 20
+            }}>
+            </View>
+          </View>
+          <ScrollView contentContainerStyle={{flex: 1}}>
+            <View style={styles.menus}>
+              <TouchableOpacity style={{
+                marginLeft: 30,
+                flexDirection: 'row',
+                justifyContent: 'flex-start',
+                borderRadius: 15,
+                height: 30,
+                width: 235,
+                backgroundColor: "#EFEFEF"
+              }}>
+                <Image
+                  style={{left: -15, zIndex: 2}}
+                  source={openBook}
+                />
+                <Text style={{
+                  marginLeft: 5,
+                  paddingTop: 5,
+                  fontSize: 18,
+                  fontWeight: "bold",
+                  fontStyle: "normal",
+                  color: "#03496B"
+                }}>
+                  Diário
+                </Text>
+              </TouchableOpacity>
+            </View>
+            <View style={styles.menus}>
+              <TouchableOpacity style={{
+                marginLeft: 30,
+                flexDirection: 'row',
+                justifyContent: 'flex-start',
+                borderRadius: 15,
+                height: 30,
+                width: 235,
+                backgroundColor: "#EFEFEF"
+              }}>
+                <Image
+                  style={{left: -15, zIndex: 2}}
+                  source={chat}
+                />
+                <Text style={{
+                  marginLeft: 5,
+                  paddingTop: 5,
+                  fontSize: 18,
+                  fontWeight: "bold",
+                  fontStyle: "normal",
+                  color: "#03496B"
+                }}>
+                  Mural
+                </Text>
+              </TouchableOpacity>
+            </View>
+            <View style={styles.menus}>
+              <TouchableOpacity style={{
+                marginLeft: 30,
+                flexDirection: 'row',
+                justifyContent: 'flex-start',
+                borderRadius: 15,
+                height: 30,
+                width: 235,
+                backgroundColor: "#EFEFEF"
+              }}>
+                <Image
+                  style={{left: -15, zIndex: 2}}
+                  source={calendar}
+                />
+                <Text style={{
+                  marginLeft: 5,
+                  paddingTop: 5,
+                  fontSize: 18,
+                  fontWeight: "bold",
+                  fontStyle: "normal",
+                  color: "#03496B"
+                }}>
+                  Calendário
+                </Text>
+              </TouchableOpacity>
+            </View>
+            <View style={styles.menus}>
+              <TouchableOpacity style={{
+                marginLeft: 30,
+                flexDirection: 'row',
+                justifyContent: 'flex-start',
+                borderRadius: 15,
+                height: 30,
+                width: 235,
+                backgroundColor: "#EFEFEF"
+              }}>
+                <Image
+                  style={{left: -15, zIndex: 2}}
+                  source={test}
+                />
+                <Text style={{
+                  marginLeft: 5,
+                  paddingTop: 5,
+                  fontSize: 18,
+                  fontWeight: "bold",
+                  fontStyle: "normal",
+                  color: "#03496B"
+                }}>
+                  Enquetes
+                </Text>
+              </TouchableOpacity>
+            </View>
+            <View style={styles.menus}>
+              <TouchableOpacity style={{
+                marginLeft: 30,
+                flexDirection: 'row',
+                justifyContent: 'flex-start',
+                borderRadius: 15,
+                height: 30,
+                width: 235,
+                backgroundColor: "#EFEFEF"
+              }}>
+                <Image
+                  style={{left: -15, zIndex: 2}}
+                  source={statistics}
+                />
+                <Text style={{
+                  marginLeft: 5,
+                  paddingTop: 5,
+                  fontSize: 18,
+                  fontWeight: "bold",
+                  fontStyle: "normal",
+                  color: "#03496B"
+                }}>
+                  Desempenho
+                </Text>
+              </TouchableOpacity>
+            </View>
+            <View style={styles.menus}>
+              <TouchableOpacity style={{
+                marginLeft: 30,
+                flexDirection: 'row',
+                justifyContent: 'flex-start',
+                borderRadius: 15,
+                height: 30,
+                width: 235,
+                backgroundColor: "#EFEFEF"
+              }}>
+                <Image
+                  style={{left: -15, zIndex: 2}}
+                  source={alarmClock}
+                />
+                <Text style={{
+                  marginLeft: 5,
+                  paddingTop: 5,
+                  fontSize: 18,
+                  fontWeight: "bold",
+                  fontStyle: "normal",
+                  color: "#03496B"
+                }}>
+                  Entradas e Saídas
+                </Text>
+              </TouchableOpacity>
+            </View>
+            <View style={styles.menus}>
+              <TouchableOpacity style={{
+                marginLeft: 30,
+                flexDirection: 'row',
+                justifyContent: 'flex-start',
+                borderRadius: 15,
+                height: 30,
+                width: 235,
+                backgroundColor: "#EFEFEF"
+              }}>
+                <Image
+                  style={{left: -15, zIndex: 2}}
+                  source={loupe}
+                />
+                <Text style={{
+                  marginLeft: 5,
+                  paddingTop: 5,
+                  fontSize: 18,
+                  fontWeight: "bold",
+                  fontStyle: "normal",
+                  color: "#03496B"
+                }}>
+                  Achados e Perdidos
+                </Text>
+              </TouchableOpacity>
+            </View>
+            <View style={styles.menus}>
+              <TouchableOpacity style={{
+                marginLeft: 30,
+                flexDirection: 'row',
+                justifyContent: 'flex-start',
+                borderRadius: 15,
+                height: 30,
+                width: 235,
+                backgroundColor: "#EFEFEF"
+              }}>
+                <Image
+                  style={{left: -15, zIndex: 2}}
+                  source={university}
+                />
+                <Text style={{
+                  marginLeft: 5,
+                  paddingTop: 5,
+                  fontSize: 18,
+                  fontWeight: "bold",
+                  fontStyle: "normal",
+                  color: "#03496B"
+                }}>
+                  Normas
+                </Text>
+              </TouchableOpacity>
+            </View>
+          </ScrollView>
         </Content>
       </Container>
     );
@@ -137,6 +515,34 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     alignItems: 'center',
     paddingBottom: 40
+  },
+  containerStudentBar: {
+    flexDirection: 'row',
+    flex: 3,
+    alignItems: 'flex-start',
+    paddingBottom: 15
+  },
+  containerMenuBar: {
+    flexDirection: 'row',
+    flex: 3,
+    alignItems: 'flex-start',
+    paddingBottom: 15
+  },
+  alunos: {
+    flexDirection: 'row',
+    paddingLeft: 20,
+    paddingRight: 10,
+    marginBottom: 10,
+  },
+  menus: {
+    flexDirection: 'row',
+    paddingLeft: 5,
+    paddingRight: 10,
+    marginBottom: 15,
+  },
+  container: {
+    flex: 1,
+    flexDirection: 'row',
   },
 });
 
