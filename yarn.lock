@@ -3679,6 +3679,11 @@ lodash@4.17.11, lodash@^4.0.0, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.5,
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
   integrity sha512-cQKh8igo5QUhZ7lg38DYWAxMvjSAKG0A8wGSVimP07SIUEK2UO+arSRKbRZWtelMtN5V0Hkwh5ryOto/SshYIg==
 
+lodash@^4.17.14:
+  version "4.17.15"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
+  integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
+
 log-symbols@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/log-symbols/-/log-symbols-2.2.0.tgz#5740e1c5d6f0dfda4ad9323b5332107ef6b4c40a"
@@ -4212,10 +4217,10 @@ native-base-shoutem-theme@GeekyAnts/theme#master:
     lodash "4.17.11"
     prop-types "^15.5.10"
 
-native-base@2.12.2:
-  version "2.12.2"
-  resolved "https://registry.yarnpkg.com/native-base/-/native-base-2.12.2.tgz#09c0a34d60d14435c53c60bc53568ca458f6c631"
-  integrity sha512-LMSdIJq110Lzn9mJNawNwYQdGjHqtwPdYIwlXXvgVHIhu8115+fcd5wQDDxWpKmmAPvJsLrKrhLgpWywRxYEfQ==
+native-base@2.13.0:
+  version "2.13.0"
+  resolved "https://registry.yarnpkg.com/native-base/-/native-base-2.13.0.tgz#b2b3e7355e4787c77383c91dae90e9506b6194f9"
+  integrity sha512-hbRG6faxdVVA536Doi21M+CEPoWFDKaKucjA2Q42qG16vysQ0Bnn6ThJAl9+/RDuMbiWqiLSieaqPzKJ4WnHew==
   dependencies:
     blueimp-md5 "^2.5.0"
     clamp "^1.0.1"
@@ -4224,7 +4229,7 @@ native-base@2.12.2:
     eslint-config-prettier "^6.0.0"
     fs-extra "^2.0.0"
     jest-react-native "^18.0.0"
-    lodash "4.17.11"
+    lodash "^4.17.14"
     native-base-shoutem-theme GeekyAnts/theme#master
     opencollective-postinstall "^2.0.2"
     print-message "^2.1.0"
