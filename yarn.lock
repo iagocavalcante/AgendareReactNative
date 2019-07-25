@@ -4236,10 +4236,10 @@ native-base-shoutem-theme@GeekyAnts/theme#master:
     lodash "4.17.11"
     prop-types "^15.5.10"
 
-native-base@2.13.0:
-  version "2.13.0"
-  resolved "https://registry.yarnpkg.com/native-base/-/native-base-2.13.0.tgz#b2b3e7355e4787c77383c91dae90e9506b6194f9"
-  integrity sha512-hbRG6faxdVVA536Doi21M+CEPoWFDKaKucjA2Q42qG16vysQ0Bnn6ThJAl9+/RDuMbiWqiLSieaqPzKJ4WnHew==
+native-base@2.13.1:
+  version "2.13.1"
+  resolved "https://registry.yarnpkg.com/native-base/-/native-base-2.13.1.tgz#dbe685c6ac3165be95d244f12db4c4b59908d46b"
+  integrity sha512-nGyiV72olh2QkHu2iOMY+0T18tUky0CoDuoGp+l+aAnyFCNWWWF6Tvcfzet1DndARmwcDDtu2n0U6MtcDwEtcw==
   dependencies:
     blueimp-md5 "^2.5.0"
     clamp "^1.0.1"
