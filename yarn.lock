@@ -4227,19 +4227,19 @@ nanomatch@^1.2.9:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
-native-base-shoutem-theme@GeekyAnts/theme#master:
-  version "0.2.3"
-  uid "18e6f46dcd55d431aa5994e3452b32b205a1be88"
-  resolved "https://codeload.github.com/GeekyAnts/theme/tar.gz/18e6f46dcd55d431aa5994e3452b32b205a1be88"
+native-base-shoutem-theme@0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/native-base-shoutem-theme/-/native-base-shoutem-theme-0.3.0.tgz#9431b52cca7af9db2e2d0f5a864acb48d48dc4de"
+  integrity sha512-guf5IKeMaQERJlD/QYlgxnsrxCeKNqC4vGwFyA8OetanxGt+oNxR5SQhLxM28CIS1D4OCqVl+u8znBdlqsIkZQ==
   dependencies:
     hoist-non-react-statics "^1.0.5"
     lodash "4.17.11"
     prop-types "^15.5.10"
 
-native-base@2.13.1:
-  version "2.13.1"
-  resolved "https://registry.yarnpkg.com/native-base/-/native-base-2.13.1.tgz#dbe685c6ac3165be95d244f12db4c4b59908d46b"
-  integrity sha512-nGyiV72olh2QkHu2iOMY+0T18tUky0CoDuoGp+l+aAnyFCNWWWF6Tvcfzet1DndARmwcDDtu2n0U6MtcDwEtcw==
+native-base@2.13.4:
+  version "2.13.4"
+  resolved "https://registry.yarnpkg.com/native-base/-/native-base-2.13.4.tgz#c1752d0bb016355b088adc5d6790b1dd678864ac"
+  integrity sha512-qgGW8qWFGVRnfPUgEgN/RC+8uM417H2rH+S9V8+Gg/3ef8RYcSc9wrrX2f+OauSvgfvnWwrPeFPzkBNp7iu3PQ==
   dependencies:
     blueimp-md5 "^2.5.0"
     clamp "^1.0.1"
@@ -4249,7 +4249,7 @@ native-base@2.13.1:
     fs-extra "^2.0.0"
     jest-react-native "^18.0.0"
     lodash "^4.17.14"
-    native-base-shoutem-theme GeekyAnts/theme#master
+    native-base-shoutem-theme "0.3.0"
     opencollective-postinstall "^2.0.2"
     print-message "^2.1.0"
     prop-types "^15.5.10"
