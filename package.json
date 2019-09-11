@@ -7,7 +7,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "native-base": "2.13.7",
+    "native-base": "2.13.8",
     "react": "16.9.0",
     "react-native": "0.60.5",
     "react-native-gesture-handler": "1.4.1",
