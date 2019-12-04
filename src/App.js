@@ -1,6 +1,8 @@
 import Login from './screens/Login/Login';
 import Home from './screens/Home/Home';
-import {  createDrawerNavigator, createStackNavigator, createAppContainer, createSwitchNavigator } from 'react-navigation';
+import {  createAppContainer, createSwitchNavigator } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
+import { createDrawerNavigator } from 'react-navigation-drawer';
 import React from 'react';
 import { Image, TouchableOpacity } from 'react-native';
 import Drawer from './widgets/Drawer';
